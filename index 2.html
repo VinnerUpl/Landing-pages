@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Promoção</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Banner principal -->
+  <header class="banner">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>Ganhe Seu Cupom Promocional!</h1>
+      <p>Descontos incríveis esperando por você. Inscreva-se agora!</p>
+      <a href="#form" class="btn-banner">Solicitar Agora</a>
+    </div>
+  </header>
+
+  <!-- Sobre o Restaurante -->
+  <section class="landing">
+    <div class="landing-content">
+      <h1>Um Restaurante de Comidas Italianas</h1>
+      <p>
+        Experimente o verdadeiro sabor da Itália! Oferecemos uma grande variedade de pratos: pizzas crocantes, massas artesanais, e sobremesas divinas que você vai amar.
+      </p>
+      <img src="https://source.unsplash.com/800x400/?pizza,italian-food" alt="Pizza italiana" class="landing-image">
+      <a href="#form" class="btn-primary">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section id="form" class="form-section">
+    <h2>Solicite Seu Cupom Promocional</h2>
+    <form class="promo-form">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contato">Contato:</label>
+        <input type="tel" id="contato" name="contato" placeholder="Seu contato" required>
+      </div>
+
+      <div class="form-group">
+        <label for="promo-code">Cupom:</label>
+        <input type="text" id="promo-code" name="promo-code" placeholder="Digite 'PROMO2024'" required>
+      </div>
+
+      <div class="form-group">
+        <label>Você é cliente da loja?</label>
+        <label><input type="radio" name="cliente" value="sim"> Sim</label>
+        <label><input type="radio" name="cliente" value="nao"> Não</label>
+      </div>
+
+      <button type="submit" class="btn-secondary">Solicitar Cupom</button>
+    </form>
+  </section>
+</body>
+</html>
